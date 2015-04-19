@@ -5,7 +5,7 @@ ENV PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR="/config/Library/Application\ Supp
 
 RUN apt-get update && \
     apt-get install -qy --force-yes curl && \
-    curl -o /tmp/package.deb https://downloads.plex.tv/plex-media-server/0.9.11.17.986-269b82b/plexmediaserver_0.9.11.17.986-269b82b_amd64.deb && \
+    curl -o /tmp/package.deb https://downloads.plex.tv/plex-media-server/0.9.11.16.958-80f1748/plexmediaserver_0.9.11.16.958-80f1748_amd64.deb && \
     dpkg -i /tmp/package.deb
 
 VOLUME /config
