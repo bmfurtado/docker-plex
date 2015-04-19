@@ -1,0 +1,9 @@
+# Git
+.git
+.gitignore
+
+# Misc
+README.md
+
+# OSX
+.DS_Store
