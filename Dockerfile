@@ -13,4 +13,6 @@ VOLUME /plex-data
 
 EXPOSE 32400
 
-CMD ["/usr/sbin/start_pms"]
+USER plex
+
+CMD [/usr/sbin/start_pms"]
