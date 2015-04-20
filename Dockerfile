@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 MAINTAINER Bruno Furtado <bmfurtado@geekoo.eu>
 
-ENV PLEX_MEDIA_SERVER_APPLICATION_SUPPORT_DIR="/plex-config/Library/Application\ Support"
+ENV HOME="/plex-config"
 
 RUN apt-get update && \
     apt-get install -qy --force-yes curl && \
