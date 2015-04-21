@@ -15,4 +15,4 @@ EXPOSE 32400
 
 USER plex
 
-CMD [/usr/sbin/start_pms"]
+CMD ["/usr/sbin/start_pms"]
