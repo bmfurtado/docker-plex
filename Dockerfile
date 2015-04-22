@@ -4,7 +4,7 @@ MAINTAINER Bruno Furtado <bmfurtado@geekoo.eu>
 
 RUN apt-get update && \
     apt-get install -qy --force-yes curl && \
-    curl -o /tmp/package.deb https://downloads.plex.tv/plex-media-server/0.9.11.16.958-80f1748/plexmediaserver_0.9.11.16.958-80f1748_amd64.deb && \
+    curl -o /tmp/package.deb https://downloads.plex.tv/plex-media-server/0.9.11.17.986-269b82b/plexmediaserver_0.9.11.17.986-269b82b_amd64.deb && \
     dpkg -i /tmp/package.deb && \
     ln -s /var/lib/plexmediaserver /plex-config
 
