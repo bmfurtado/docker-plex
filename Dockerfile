@@ -22,4 +22,4 @@ EXPOSE 32400
 
 USER plex
 
-CMD ["/usr/sbin/start-plex"]
+CMD ["/usr/local/bin/start-plex"]
