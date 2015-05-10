@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -e
+
+rm -rf /var/run/*
+rm -f "/plex-config/Library/Application Support/Plex Media Server/plexmediaserver.pid"
+
+exec /usr/sbin/start_pms

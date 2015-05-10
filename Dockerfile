@@ -11,6 +11,10 @@ RUN apt-get update && \
     chown plex: /var/run/plexmediaserver && \
     ln -s /var/lib/plexmediaserver /plex-config
 
+ADD start-plex /usr/local/bin/start-plex
+
+RUN chmod 755 /usr/local/bin/start-plex
+
 VOLUME /plex-config
 VOLUME /plex-data
 
@@ -18,4 +22,4 @@ EXPOSE 32400
 
 USER plex
 
-CMD ["/usr/sbin/start_pms"]
+CMD ["/usr/sbin/start-plex"]
