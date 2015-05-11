@@ -2,7 +2,7 @@
 
 set -e
 
-rm -rf /var/run/*
+rm -rf /var/run/plexmediaserver/*
 rm -f "/plex-config/Library/Application Support/Plex Media Server/plexmediaserver.pid"
 
 exec /usr/sbin/start_pms
