@@ -5,7 +5,7 @@ ENV PLEX_MEDIA_SERVER_PIDFILE=/var/run/plexmediaserver/plexmediaserver.pid
 
 RUN apt-get update && \
     apt-get install -qy --force-yes curl && \
-    curl -o /tmp/package.deb https://downloads.plex.tv/plex-media-server/0.9.12.8.1362-4601e39/plexmediaserver_0.9.12.8.1362-4601e39_amd64.deb && \
+    curl -o /tmp/package.deb https://downloads.plex.tv/plex-media-server/0.9.15.2.1663-7efd046/plexmediaserver_0.9.15.2.1663-7efd046_amd64.deb && \
     dpkg -i /tmp/package.deb && \
     mkdir -p /var/run/plexmediaserver && \
     chown plex: /var/run/plexmediaserver && \
